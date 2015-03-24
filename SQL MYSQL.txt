@@ -1,0 +1,37 @@
+-- phpMyAdmin SQL Dump
+-- version 2.10.3
+-- http://www.phpmyadmin.net
+-- 
+-- Servidor: localhost
+-- Tiempo de generación: 24-03-2015 a las 00:01:26
+-- Versión del servidor: 5.0.51
+-- Versión de PHP: 5.2.6
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+-- 
+-- Base de datos: `cotizador`
+-- 
+
+-- --------------------------------------------------------
+
+-- 
+-- Estructura de tabla para la tabla `productos`
+-- 
+
+CREATE TABLE `productos` (
+  `id` int(11) NOT NULL auto_increment,
+  `Clave` varchar(255) NOT NULL,
+  `Nombre` varchar(255) NOT NULL,
+  `Descripcion` text NOT NULL,
+  `Precio` varchar(255) NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=8 ;
+
+-- 
+-- Volcar la base de datos para la tabla `productos`
+-- 
+
+INSERT INTO `productos` VALUES (1, '4451-X', 'Cisco 4000 ', 'Cisco 4000 Series Integrated Services Router\n\nCisco IOS XE Operating System\n1-rack-unit (RU) or 2RU form factor\nUp to 2 Gbps of throughput\nUp to 3 network interface module slots\nUp to 2 service module slots\nUp to 4 integrated 10/100/1000 Ethernet ports\nUp to 8 CPU core integrated server modules', '15000');
+INSERT INTO `productos` VALUES (2, '810S', 'Smallest Cisco Fixed ISR', '810 Series (Smallest Cisco Fixed ISR)', '2000');
+INSERT INTO `productos` VALUES (3, '310RM78898', 'FalgsShip 600', 'Basic features, security performance, and connectivity for teleworkers and small branch offices of 10 users or fewer', '10000');
